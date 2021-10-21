@@ -17,5 +17,12 @@
 
 ## 구현
 
+초기 화면. 브랜드 광고 화면을 클릭하면 공식 온라인 스토어로 이동. 
+![shoppingmall1](https://user-images.githubusercontent.com/69028945/138362150-0e944660-0efd-41e3-b6c2-c485e335e960.PNG)
+
+![shoppingmall2](https://user-images.githubusercontent.com/69028945/138362157-5ab13888-12fa-4aa9-860b-b6fea4527d1f.PNG)
+
+![shoppingmall3](https://user-images.githubusercontent.com/69028945/138362158-5d042a65-7944-4165-8298-bacec31c449f.PNG)
+
 
 
