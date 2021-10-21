@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="main.xsl"?>
+<메인 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="main.xsd">
+
+<광고1 file="http://overview.kr/wp-content/uploads/2019/06/adidas_main2.jpg"/>
+<광고2 file="https://akm-img-a-in.tosshub.com/indiatoday/images/story/201707/nike-647_071117061035.jpg"/>
+<광고3 file="https://i.pinimg.com/originals/69/05/3a/69053a2025d585e5e45c40ddfaf48ce1.jpg"/>
+<광고4 file="http://www.iconsumer.or.kr/news/photo/201903/8910_11227_3435.jpg"/>
+<광고5 file="https://post-phinf.pstatic.net/MjAxNzA1MTJfMjE0/MDAxNDk0NTQ5Nzk0ODcw.biG_xD7X2jEaIaMgDoFDSthkyW6k59yQ2YrzF2qH0Pgg.nlhCahtLhADXSYLUbFPi937pGouhu9q7eTws-H99J5Ag.JPEG/1CagOeD.jpg?type=w1200"/>
+<인기상품 카테고리="아우터">
+<이름>세미 오버  숏패딩</이름>
+<가격 단위="원">58000</가격>
+<이미지 file="https://image.msscdn.net/images/goods_img/20181120/909281/909281_1_500.jpg" w="500" h="600"/>
+</인기상품>
+<인기상품 카테고리="반지">
+<이름>반지</이름>
+<가격 단위="원">200000</가격>
+<이미지 file="https://i.pinimg.com/236x/18/45/65/184565490b2f664e3743e9f843b34783.jpg" w="500" h="600"/>
+</인기상품>
+<인기상품 카테고리="하의">
+<이름>데님 팬츠</이름>
+<가격 단위="원">64000</가격>
+<이미지 file="http://m.naenampum.com/web/product/big/201812/1c86dfe4cc4cf53f5cdb90bec9f0af75.jpg" w="500" h="600"/>
+</인기상품>
+<표시>
+<제작>about 3team</제작>
+<상호>3team's Shopping Mall</상호>
+<사업장소재지>경상북도 경산시 하양읍 하양로 13-13 D2</사업장소재지>
+<안내전화 지역번호="053">000-0000</안내전화>
+<조장>여지영</조장>
+<책임자>신지수, 정재은</책임자>
+<제휴광고문의>help@3team.com</제휴광고문의>
+<저작권>COPYRIGHT (C) 2019 3TEAM ALL RIGHTS RESERVED.</저작권>
+</표시>
+</메인>

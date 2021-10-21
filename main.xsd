@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+ <xs:element name="메인">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="광고1">
+          <xs:complexType>
+             <xs:attribute name="file" type="xs:anyURI"/>
+             <xs:attribute name="w" type="xs:positiveInteger"/>
+             <xs:attribute name="h" type="xs:positiveInteger"/>
+          </xs:complexType>
+       </xs:element>
+       <xs:element name="광고2">
+          <xs:complexType>
+             <xs:attribute name="file" type="xs:anyURI"/>
+             <xs:attribute name="w" type="xs:positiveInteger"/>
+             <xs:attribute name="h" type="xs:positiveInteger"/>
+          </xs:complexType>
+       </xs:element>
+       <xs:element name="광고3">
+          <xs:complexType>
+             <xs:attribute name="file" type="xs:anyURI"/>
+             <xs:attribute name="w" type="xs:positiveInteger"/>
+             <xs:attribute name="h" type="xs:positiveInteger"/>
+          </xs:complexType>
+       </xs:element>
+       <xs:element name="광고4">
+          <xs:complexType>
+             <xs:attribute name="file" type="xs:anyURI"/>
+             <xs:attribute name="w" type="xs:positiveInteger"/>
+             <xs:attribute name="h" type="xs:positiveInteger"/>
+          </xs:complexType>
+       </xs:element>
+       <xs:element name="광고5">
+          <xs:complexType>
+             <xs:attribute name="file" type="xs:anyURI"/>
+             <xs:attribute name="w" type="xs:positiveInteger"/>
+             <xs:attribute name="h" type="xs:positiveInteger"/>
+          </xs:complexType>
+       </xs:element>
+<xs:element name="인기상품" type="popularType" maxOccurs="unbounded"/>
+<xs:element name="표시" type="markType"/>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+
+<xs:complexType name="popularType">
+		<xs:sequence>
+			<xs:element name="이름" type="xs:string"/>
+			<xs:element name="가격" type="priceType"/>
+		<xs:element name="이미지">
+          <xs:complexType>
+             <xs:attribute name="file" type="xs:anyURI"/>
+             <xs:attribute name="w" type="xs:positiveInteger"/>
+             <xs:attribute name="h" type="xs:positiveInteger"/>
+          </xs:complexType>
+       </xs:element>
+		</xs:sequence>
+		<xs:attribute name="카테고리" type="xs:string" use="required"/>
+	</xs:complexType>
+
+<xs:complexType name="markType">
+		<xs:sequence>
+		<xs:element name="제작" type="xs:string"/>
+		<xs:element name="상호" type="xs:string"/>
+			<xs:element name="사업장소재지" type="xs:string"/>
+			<xs:element name="안내전화" type="ComTelType"/>
+			<xs:element name="조장" type="xs:string"/>
+			<xs:element name="책임자" type="xs:string"/>
+			<xs:element name="제휴광고문의" type="xs:string"/>
+			<xs:element name="저작권" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+
+<xs:complexType name="ComTelType">
+		<xs:simpleContent>
+			<xs:extension base="PhoneType">
+				<xs:attribute name="지역번호" type="EntryComType" use="required"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+
+	<xs:simpleType name="EntryComType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="02"/>
+			<xs:enumeration value="042"/>
+			<xs:enumeration value="051"/>
+			<xs:enumeration value="053"/>
+			<xs:enumeration value="055"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+<xs:simpleType name="PhoneType">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="\d{3}-\d{4}"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:complexType name="priceType">
+<xs:simpleContent>
+<xs:extension base="price2Type">
+<xs:attribute name="단위" type="xs:string" use="required"/>
+</xs:extension>
+</xs:simpleContent>
+</xs:complexType>
+
+<xs:simpleType name="price2Type">
+<xs:restriction base="xs:string">
+</xs:restriction>
+</xs:simpleType>
+
+</xs:schema>

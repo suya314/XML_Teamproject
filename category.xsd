@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+<xs:element name="쇼핑몰">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="상품카테고리" type="xs:string"/>
+<xs:element name="상품" type="goodsType" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+
+<xs:complexType name="goodsType">
+		<xs:sequence>
+			<xs:element name="이름" type="NameType"/>
+			<xs:element name="색상" type="xs:string"/>
+			<xs:element name="사이즈" type="xs:string"/>
+			<xs:element name="재질" type="xs:string"/>
+			<xs:element name="설명" type="xs:string"/>
+			<xs:element name="가격" type="priceType"/>
+		<xs:element name="이미지">
+          <xs:complexType>
+             <xs:attribute name="file" type="xs:anyURI"/>
+             <xs:attribute name="w" type="xs:positiveInteger"/>
+             <xs:attribute name="h" type="xs:positiveInteger"/>
+          </xs:complexType>
+       </xs:element>
+			<xs:element name="매출연령" type="xs:string"/>
+		</xs:sequence>
+		<xs:attribute name="카테고리" type="xs:string" use="required"/>
+	</xs:complexType>
+
+
+<xs:complexType name="NameType">
+		<xs:simpleContent>
+			<xs:extension base="NumberType">
+				<xs:attribute name="넘버" type="xs:positiveInteger" use="required"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+
+<xs:simpleType name="NumberType">
+		<xs:restriction base="xs:string">
+		</xs:restriction>
+	</xs:simpleType>
+
+
+<xs:complexType name="priceType">
+<xs:simpleContent>
+<xs:extension base="price2Type">
+<xs:attribute name="단위" type="xs:string" use="required"/>
+</xs:extension>
+</xs:simpleContent>
+</xs:complexType>
+
+<xs:simpleType name="price2Type">
+<xs:restriction base="xs:string">
+</xs:restriction>
+</xs:simpleType>
+
+  </xs:schema>
